@@ -193,28 +193,13 @@ or use VS Code Live Server.
 ## 📸 Screenshots
 
 ### Dashboard
-
-> Add dashboard screenshot here.
-
-```
-frontend/screenshots/dashboard.png
-```
+<img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/514714c6-0ae6-4ab9-b9a3-adaf4664e8ae" />
 
 ### Cluster Analysis
-
-> Add cluster analysis screenshot here.
-
-```
-frontend/screenshots/analysis.png
-```
+<img width="1918" height="792" alt="image" src="https://github.com/user-attachments/assets/baa854ab-f46d-4c29-a276-e298a2d5cc38" />
 
 ### Prediction
-
-> Add prediction screenshot here.
-
-```
-frontend/screenshots/prediction.png
-```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3e84953d-55a6-4711-bbeb-9a672525b767" />
 
 ## 🎯 Learning Outcomes
 
