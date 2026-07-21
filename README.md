@@ -115,42 +115,6 @@ Features used for clustering:
 
 ---
 
-## 🚀 Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/Shubranilpandit/SCT_ML_2.git
-```
-
-### Navigate into the project
-
-```bash
-cd SCT_ML_2
-```
-
-### Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### Activate Virtual Environment
-
-Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r backend/requirements.txt
-```
-
----
-
 ## ▶️ Run Backend
 
 ```bash
