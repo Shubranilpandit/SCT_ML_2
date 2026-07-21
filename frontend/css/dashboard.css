@@ -1,0 +1,304 @@
+/* ==========================================================
+   DASHBOARD CARDS
+========================================================== */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+
+.card{
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:0.4s ease;
+
+    cursor:pointer;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(79,70,229,0.25);
+
+}
+
+
+.card i{
+
+    font-size:45px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+
+.card h3{
+
+    color:var(--text);
+
+    font-size:1.2rem;
+
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+
+
+/* ==========================================================
+   CHART SECTION
+========================================================== */
+
+.chart-section{
+
+    margin-top:50px;
+
+}
+
+
+.chart-card{
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.chart-card canvas{
+
+    width:100% !important;
+
+    height:420px !important;
+
+}
+
+
+
+
+/* ==========================================================
+   TABLE CONTAINER
+========================================================== */
+
+.table-container{
+
+    overflow-x:auto;
+
+    margin-top:25px;
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    border:1px solid var(--glass-border);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:700px;
+
+}
+
+
+thead{
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+
+thead th{
+
+    color:white;
+
+    padding:18px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+
+tbody tr{
+
+    transition:0.3s;
+
+}
+
+
+tbody tr:nth-child(even){
+
+    background:rgba(255,255,255,0.25);
+
+}
+
+
+tbody tr:hover{
+
+    background:rgba(79,70,229,0.15);
+
+}
+
+
+tbody td{
+
+    text-align:center;
+
+    padding:18px;
+
+    color:var(--text);
+
+}
+
+
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#E5E7EB;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+
+
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+section{
+
+    margin-bottom:70px;
+
+}
+
+
+
+
+/* ==========================================================
+   SMALL FADE-IN ANIMATION
+========================================================== */
+
+.card,
+.chart-card,
+.table-container{
+
+    animation:fadeUp 0.8s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

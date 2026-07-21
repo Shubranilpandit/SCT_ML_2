@@ -1,0 +1,44 @@
+# ============================
+# Core Data Science Libraries
+# ============================
+numpy
+pandas
+
+# ============================
+# Data Visualization
+# ============================
+matplotlib
+seaborn
+
+# ============================
+# Machine Learning
+# ============================
+scikit-learn
+joblib
+
+# ============================
+# Jupyter Notebook
+# ============================
+notebook
+ipykernel
+
+# ============================
+# Flask Backend
+# ============================
+Flask
+Flask-Cors
+
+# ============================
+# File Upload Support
+# ============================
+Werkzeug
+
+# ============================
+# CSV & Excel Support
+# ============================
+openpyxl
+
+# ============================
+# Optional (Useful for Development)
+# ============================
+requests

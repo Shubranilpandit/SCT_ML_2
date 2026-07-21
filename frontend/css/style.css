@@ -1,0 +1,297 @@
+/* ==========================================================
+   GOOGLE FONT
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ==========================================================
+   CSS RESET
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* ==========================================================
+   CSS VARIABLES
+========================================================== */
+
+:root{
+
+    --primary:#4F46E5;
+    --secondary:#7C3AED;
+    --accent:#06B6D4;
+
+    --success:#10B981;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    --white:#ffffff;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --card-bg:rgba(255,255,255,0.18);
+
+    --glass-border:rgba(255,255,255,0.25);
+
+    --shadow:0 12px 35px rgba(0,0,0,0.15);
+
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #EEF2FF,
+        #E0F2FE,
+        #F5F3FF
+    );
+
+    background-size:300% 300%;
+
+    animation:gradientAnimation 12s ease infinite;
+
+}
+
+
+/* ==========================================================
+   ANIMATED BACKGROUND
+========================================================== */
+
+@keyframes gradientAnimation{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MAIN CONTAINER
+========================================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding-bottom:60px;
+
+}
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 7%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,0.25);
+
+    border-bottom:1px solid rgba(255,255,255,0.3);
+
+}
+
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.logo i{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+}
+
+
+.logo h2{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+
+/* Navigation */
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+.navbar ul li a{
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+.navbar ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 20px 60px;
+
+}
+
+
+.hero h1{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+
+.hero p{
+
+    width:70%;
+
+    margin:auto;
+
+    font-size:1.1rem;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   SECTION TITLES
+========================================================== */
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin:60px 0 35px;
+
+    position:relative;
+
+}
+
+
+/* Decorative underline */
+
+.section-title::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:linear-gradient(
+        to right,
+        var(--primary),
+        var(--accent)
+    );
+
+    display:block;
+
+    margin:10px auto;
+
+    border-radius:20px;
+
+}
